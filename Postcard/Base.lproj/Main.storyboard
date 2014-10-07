@@ -95,13 +95,22 @@
                                     <rect key="frame" x="202" y="160" width="80" height="80"/>
                                 </variation>
                             </imageView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYG-DF-w9B">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="message Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYG-DF-w9B">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="32" y="72" width="162" height="130"/>
+                                    <rect key="frame" x="32" y="72" width="250" height="80"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N52-pd-913">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="160" width="159" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -113,6 +122,7 @@
                                 <exclude reference="V3Z-HP-pbU"/>
                                 <exclude reference="R7u-cv-wnG"/>
                                 <exclude reference="HYG-DF-w9B"/>
+                                <exclude reference="N52-pd-913"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -122,6 +132,7 @@
                                 <include reference="V3Z-HP-pbU"/>
                                 <include reference="R7u-cv-wnG"/>
                                 <include reference="HYG-DF-w9B"/>
+                                <include reference="N52-pd-913"/>
                             </mask>
                         </variation>
                     </view>
@@ -131,11 +142,12 @@
                         <outlet property="enterNameTextField" destination="YaZ-9w-prX" id="5f2-AK-49S"/>
                         <outlet property="mailButton" destination="V3Z-HP-pbU" id="vSJ-SG-VHj"/>
                         <outlet property="messageLabel" destination="HYG-DF-w9B" id="K6l-GL-2H0"/>
+                        <outlet property="nameLabel" destination="N52-pd-913" id="Nfp-Tc-zEC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353" y="377"/>
+            <point key="canvasLocation" x="1434" y="372"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Evu-F3-ulY">
